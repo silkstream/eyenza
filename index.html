@@ -1,0 +1,67 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7, IE=9, IE=10, chrome=1">
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*"> 
+		<meta name="format-detection" content="telephone=no" />
+		<!--
+		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+		-->
+		<!--
+		<link rel="stylesheet" type="text/css" href="app.css" />
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="js/lib/knockout-3.0.0.js"></script>
+		<script type="text/javascript" src="js/app/ViewModels/AppViewModel.js"></script>       
+		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7, IE=9, IE=10, chrome=1">
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*"> 
+		<meta name="format-detection" content="telephone=no" />
+		<!-- <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" /> -->
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- menu css -->
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<link rel="stylesheet" type="text/css" href="css/profile.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/airtime.css" />
+		<!-- libraries -->
+		<script type="text/javascript" src="js/lib/jquery-2.0.2.js"></script>
+		<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+		<script type="text/javascript" src="js/lib/knockout-2.1.0.js"></script>		
+		<script type="text/javascript" src="js/lib/pager.js"></script>
+		<!-- custom libs -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/json_request.js"></script>
+	</head>
+
+	<div class="modal">
+		<!-- modal for status info and other notifications -->
+	</div>
+	<div class="app-container">
+		<div class="header">
+			<!-- header information and logos -->
+			<div class="menu" id="menu-page"> 
+
+			</div>
+		</div>
+		<div class="body">
+			<!-- body information and logos -->
+			<div class="app-page" id="home-page" 	data-bind="page: {id: 'home-page', source: 'js/app/Views/pages/home.html'}"> </div>
+			<div class="app-page" id="profile-page" data-bind="page: {id: 'profile-page', source: 'js/app/Views/pages/profile.html'}"> </div>
+			<div class="app-page" id="login-page" 	data-bind="page: {id: 'login-page', sourceOnShow: 'js/app/Views/pages/login.html',with:loginInit}"> </div>
+		</div>
+		<div class="footer">
+
+			<!-- footer information and logos -->
+		</div>
+	</div>
+<body>
+</html>
+<script type="text/javascript" src="js/app/ViewModels/AppViewModel.js"> </script>
+
+

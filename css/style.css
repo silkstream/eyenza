@@ -1,0 +1,69 @@
+html, body{ padding: 0; margin: 0; font-size: 16px; font-family: "Arial Narrow", "Helvetica Neue", Helvetica, sans-serif; color: #200453; }
+html a,a:visited{ text-decoration:none; color: #200453;}
+
+input{ width: 100%; border: 1px solid #888A85; height: 28px; margin: 5px 0px; font-size: 18px; color: #3465A4;  padding: 0px 5px; }
+input:active, input:focus{ 
+	border-color: #6EA2DE;
+	box-shadow: 0px 0px 10px #6EA2DE;
+	border: 1px solid #777;
+}
+hr{ border: 0; border-top: 1px solid #777; width: 100%; }
+select{ width: 100%; border: 1px solid #888A85; height: 30px; margin: 10px 0px; font-size: 18px; color: #200453;  padding: 0px 0%; }
+input[type="radio"] {
+	display:none;
+}
+#airtime_cellnum{
+	margin-left: 30px;
+	width: 60%;
+}
+input[type="radio"] + label {
+	display:inline;
+	font-size: 18px;
+	width: 100% !important;
+	z-index: 10000;
+}
+input[type="radio"] + label:before {
+	content: '';
+	display:inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../images/Resources/720/checkbox_unchecked.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+	content: '';
+	background: url(../images/Resources/720/checkbox_checked.png) no-repeat;
+	background-size: 100%;
+}
+ul{
+list-style-type: none;
+margin-left: 0px;
+padding-left: 10px;
+}
+
+.header{ position: fixed; top: 0; left: 0; right:0; height: 20%; background: #fff;}
+.body{ position: fixed; top:20%; left: 0; right:0; height: 80%; background: #fff; padding: 0px; margin: 0px; overflow-y:auto;}
+.footer{ height: 10%; background: #fff;}
+.footer a{ color: #fff !important; }
+
+.main-text,#login-page > .welcome-balance{ font-size: 18px; color: #200453; margin: 5% 0%; }
+.main-title{ margin: 5% 0%; }
+
+.app-container{ width: 100%; }
+.red-btn{
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	background:-ms-linear-gradient( top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #fe1a00), color-stop(100%, #ce0100) );
+	background-color:#fe1a00;
+	color:#ffffff;
+	padding: 3px 6px; width: 50px; background-size: 100%; 
+	text-align: center;
+	z-index: 1;
+}
+#confirm-message{ width: 100%; text-align: center; margin-top: 20%; }
+#confirm-page-container{ width: 100%; height: 90%; }
+#default-confirm-page{ width: 100%; height: 80%;}

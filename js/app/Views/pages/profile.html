@@ -1,0 +1,68 @@
+</html>
+	<!-- profile page items -->
+	<div class="profile-page-items" data-bind="page: {id: 'start'}">
+		<div class="main-text"> Your Account </div>
+		<div class="main-title"> Hi Andre, how are you </div>
+		<a class="item-element" id="password" href="#profile-page/password-page">
+			<div class="item-img"> <img src="images/Resources/720/change_password.png" > </img> </div>
+			<div class="item-text"> PASSWORD </div>
+		</a>
+		<a class="item-element" id="lock" href="#profile-page/lock-page">
+			<div class="item-img"> <img src="images/Resources/720/lock.png" > </img> </div>
+			<div class="item-text"> LOCK </div>
+		</a>
+		<a class="item-element" id="meters" href="#profile-page/meters-page">
+			<div class="item-img"> <img src="images/Resources/720/tokens.png" > </img> </div>
+			<div class="item-text"> METERS </div>
+		</a>
+		<a class="item-element" id="profile" href="#profile-page/my-profile-page">
+			<div class="item-img"> <img src="images/Resources/720/profile_unselected.png" > </img> </div>
+			<div class="item-text"> PROFILE </div>
+		</a>
+		<a class="item-element" id="limits"  href="#profile-page/limits-page">
+			<div class="item-img"> <img src="images/Resources/720/limits.png" > </img> </div>
+			<div class="item-text"> LIMITS </div>
+		</a>
+		<a class="item-element" id="statement" href="#profile-page/statement-page">
+			<div class="item-img"> <img src="images/Resources/720/e_statement.png" > </img> </div>
+			<div class="item-text"> E-STATEMENT </div>
+		</a>
+	</div>
+	<!-- end profile page -->
+	<!-- change password -->
+	<div data-bind="page: {id: 'password-page',  source: 'js/app/Views/pages/password.html'}" id="password-page"> </div>
+	<!-- change password confirm-->
+	<div data-bind="page: {id: 'password-confirm',  source: 'js/app/Views/pages/confirm_page.html',  withOnShow: setPassword}" id="default-confirm-page"> </div>
+
+	<!-- lock page  -->
+	<div data-bind="page: {id: 'lock-page', source: 'js/app/Views/pages/lock.html'}" id="lock-page"> </div>
+	<!-- lock confirm page  -->
+	<div data-bind="page: {id: 'lock-confirm-page', source: 'js/app/Views/pages/lock_confirm.html', withOnShow: setLock}" id="lock-confirm-page"> </div>
+
+	<!-- meters page  -->
+	<div data-bind="page: {id: 'meters-page', source: 'js/app/Views/pages/meters.html', withOnShow: getAllMeters}" id="meters-page"> </div>
+	<!-- meters confirm  page  -->
+	<div data-bind="page: {id: 'meters-confirm-page', source: 'js/app/Views/pages/confirm_page.html', beforeShow: setMeters}" id="limits-page"> </div>
+
+	<!-- profile page  -->
+	<div data-bind="page: {id: 'my-profile-page', source: 'js/app/Views/pages/user_profile.html', withOnShow: getUserProfile}" id="my-profile-page"> </div>
+	<!-- limits  page  -->
+	<div data-bind="page: {id: 'limits-page', source: 'js/app/Views/pages/limits.html', withOnShow: getLimits}" id="limits-page"> </div>
+	<!-- limits confirm page  -->
+	<div data-bind="page: {id: 'limits-confirm-page', source: 'js/app/Views/pages/confirm_page_blank.html', beforeShow: setLimits}" id="limits-page"> </div>
+
+	<!-- satement  page  -->
+	<div data-bind="page: {id: 'statement-page',  withOnShow: getStatement}" id="statement-page" >
+		<div class="main-text"> Statement  </div>
+		<div class="main-title">YOUR TRASACTION HISTORY </div>
+		<hr>
+		<div id="statement-container">
+			<!-- 
+			<div class="statement-label"> Payment </div> <div class="statement-data"> R0.00 </div>
+			-->
+		</div>
+		<div class="red-btn" style="float: left; margin: 5px 0px; " onclick="previousPage()"> Back </div>
+	</div>
+
+</html>
+

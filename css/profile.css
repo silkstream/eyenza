@@ -1,0 +1,69 @@
+#profile-page{ width: 100%; height: 99%; padding-top:1%; background: #fff; }
+#profile-page > .welcome-text,#profile-page > .welcome-balance{ font-size: 18px; color: #200453; margin-left: 2%; }
+#profile-page > .welcome-balance{ margin: 5% 2%; }
+
+#profile-page > .profile-page-items >.item-element{
+	float: left;
+	width: 47%;
+	padding-bottom: 30%;
+	height: 0;
+	background: url('../images/Resources/320x240/background.png') repeat; background-size: 100%;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+#profile-page > .profile-page-items  > .item-element > .item-img{ float: left; width: 100%; height: 60%; margin-top: 5%; }
+#profile-page > .profile-page-items  > .item-element > .item-img img{ float: left; width: 30%; height: auto; margin-left: 35%; margin-top: 0px; }
+#profile-page > .profile-page-items  > .item-element > .item-text{ float:left; width: 100%; text-align: bottom; color: #fff; text-align: center; font-weight: bold;  margin-top: 40%; font-size: 14px; }
+
+
+#profile-page .profile-page-items .main-text{ margin: 0% 2%; }
+#profile-page .profile-page-items .main-title{ margin: 0% 2%; }
+/*meters*/
+#profile-page #meters-page .main-title{ margin: 0; }
+#profile-page #meters-page .meters-container{
+	background: #eee;
+	width: 96%;
+	padding: 1%;
+	margin: 5px 1%;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+/* password */
+#profile-page #password-page{ width: 96%; margin: 0px 2%; height: 96%; }
+#profile-page #password-page #password-container{ width: 100%; height:90%; }
+
+/* passwordm confirm page */
+#profile-page #password-confirm-page{ width: 96%; margin: 0px 2%; height: 100%; background: red; }
+/* lock */
+#profile-page #lock-page .main-text{ margin: 0% 0%; }
+#profile-page #lock-page .main-title{ margin-bottom: 1% 0%; }
+
+#profile-page  #lock-page{ width: 96%; margin: 0% 2%; height: 100%; }
+#profile-page  #lock-page #lock-container{ width: 100%; height: 90%;}
+/* lock confirm */
+#profile-page  #lock-confirm-page{ width: 100%; height: 80%; }
+#profile-page  #lock-confirm-page #lock-confirm-container{ width: 100%; height: 90%;  }
+
+/* profile */
+#profile-page #my-profile-page{ width: 96%; margin: 0 2%; height: 100%; }
+#profile-page #my-profile-page #profile-container{ width: 100%; height: 90%; }
+#profile-page #my-profile-page .profile-label{ float: left; width: 50%; }
+#profile-page #my-profile-page .main-text{ margin: 0% 0%; }
+#profile-page #my-profile-page .main-title{ margin-bottom: 1% 0%; }
+
+/* limits */
+#profile-page #limits-page { width: 96%; margin-left: 2%; height: 100%; }
+#profile-page #limits-page #limits-container{ width: 100%; height: 90%; overflow-y: auto; }
+
+#profile-page #limits-page .main-title{ margin:0; }
+#profile-page #limits-page .profile-label{ float: left; width: 100%; }
+
+/* statement */
+#profile-page #statement-page .main-title{ margin:0; }
+#profile-page #statement-page { width: 92%; margin: 4%;}
+#profile-page #statement-page .profile-label{ float: left; width: 100%; }
+#profile-page #statement-page #statement-container{width: 100%; height: 70%; overflow-y:auto; }
+#profile-page #statement-page .statement-label{ width: 50%; float:left; text-align: left;}
+#profile-page #statement-page .statement-data{ width: 50%; float: left; text-align: right; }
+

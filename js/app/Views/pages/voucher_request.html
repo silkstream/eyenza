@@ -1,0 +1,40 @@
+<html>
+	<div id="voucher-page-request" >
+		<div class="main-text" > Voucher Details </div>
+		<div class="voucher-container">
+			<div class="voucher-label"> Current Balance </div>
+			<div class="voucher-data" id="curr-balance"> </div>
+		</div>
+		<div class="voucher-container">
+			<div class="voucher-label"> Voucher PIN</div>
+			<div class="voucher-data" id="voucher">  </div>
+		</div>
+		<div id="voucher-error">  </div>
+		<div class="footer">
+			<div class="red-btn" style="float: right; margin: 5px 0px; ">
+				<a id="next-voucher"  onclick="previousPage()"> OK  </a>
+			</div>
+		</div>
+	</div>
+</html>
+<style>
+#voucher-page-request{
+	width: 98%;
+	margin-left: 1%;
+	float: left;
+	margin-bottom: 20px;
+}
+#voucher-page-request .voucher-container {
+	width: 100%;
+}
+#voucher-page-request .voucher-container .voucher-label{
+	width: 50%;
+	float: left;
+	margin-left: 1%;
+}
+#voucher-page-request .voucher-container .voucher-data{
+	width: 40%;
+	float: left;
+}
+#voucher-error{ width: 100%; text-align: center; margin-top: 20%; }
+</style>

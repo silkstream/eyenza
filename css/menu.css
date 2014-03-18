@@ -1,0 +1,39 @@
+.menu-container{ width: 100%; background: url('../images/Resources/320x240/background.png') repeat; height: 100%;}
+.menu-container #home-link{
+	float:right;
+	/* border: 1px solid red; */
+	width: 15%; height: 95%;
+	background: url('../images/Resources/720/home_unselected.png') no-repeat; background-size: 100%;background-position: bottom;
+}
+.menu-container #home-link:active{
+	background: url('../images/Resources/720/home_selected.png') no-repeat; background-size: 100%;background-position: bottom;
+}
+
+.menu-container #profile-link{
+	float:right;
+	/* border: 1px solid red; */
+	width: 15%; height: 95%;
+	background: url('../images/Resources/720/profile_unselected.png') no-repeat; background-size: 100%; background-position: bottom;
+}
+.menu-container #profile-link:active{
+	background: url('../images/Resources/720/profile_selected.png') no-repeat; background-size: 100%; background-position: bottom;
+}
+
+.menu-container #logout-link{
+	float:right;
+	/* border: 1px solid red; */
+	width: 15%; height: 95%;
+	background: url('../images/Resources/720/exit_unselected.png') no-repeat; background-size: 100%; background-position: bottom;
+}
+.menu-container #logout-link:active{
+	background: url('../images/Resources/720/exit_selected.png') no-repeat; background-size: 100%; background-position: bottom;
+}
+
+.menu-container #app-logo{
+	width: 40%; height: 0px; padding-bottom: 20%; max-height: 140px;
+	display: inline-block;
+	background: url('../images/Resources/720/1.png') no-repeat; background-size: 200px 100px;
+}
+.menu-item{
+	display:none;
+}

@@ -1,0 +1,8 @@
+#login-page{ width: 100%; height: 99%; padding-top: 1%; background: #fff; }
+#login-page .input-container{ width: 96%; margin: 0px 2%; height: 100px; }
+#login-page .main-text{ margin: 0% 2%; }
+#login-page .main-title{ margin: 0% 2%; }
+#login-page .login-container{ width: 96%; margin: 0 2%; }
+#login-page .login-container .forgot-lnk{  width: 100%; text-align: right; clear: both; margin-top: 10px;  }
+#login-page .login-container .register-lnk{ width: 100%; text-align: right; clear: both; margin-top: 5px; }
+#login-page .auto-page-message{ width: 96%; margin: 2%; } 

@@ -1,0 +1,58 @@
+input[type="radio"] {
+	display:none;
+}
+#airtime_cellnum{
+	margin-left: 30px;
+	width: 60%;
+}
+input[type="radio"] + label {
+	display:inline;
+	font-size: 18px;
+}
+input[type="radio"] + label:before {
+	content: '';
+	display:inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../images/Resources/720/checkbox_unchecked.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+	content: '';
+	background: url(../images/Resources/720/checkbox_checked.png) no-repeat;
+	background-size: 100%;
+}
+#airtime-page  ul{
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 10px;
+}
+.vendor-airtime-list{ float: left; width: 100%; }
+#airtime_clear{
+	border: 0;
+	border-bottom: 1px solid #eee;
+	width: 100%;
+	clear:both;
+	margin: 5px 0;
+}
+#airtime-page .main-text{ margin: 0% 2%; }
+#airtime-page .main-title{ margin: 0% 2%; }
+
+.airtime-to{
+	border: 1px solid #eee;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	padding: 0 10px;
+}
+.airtime-list{
+	height: 35%;
+	overflow: auto;
+	border: 1px solid #eee;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	padding: 10px;
+}

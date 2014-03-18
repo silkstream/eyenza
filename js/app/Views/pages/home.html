@@ -1,0 +1,40 @@
+</html>
+	<!-- home page items -->
+	<div class="home-page-items"  data-bind="page: {id: 'start'}">
+		<div class="main-text"> Welcome </div>
+		<div class="main-title"> Hi Andre, your balance is R100.00 </div>
+		<a class="item-element" id="airtime" href="#home-page/airtime-page">
+			<div class="item-img"> <img src="images/Resources/720/airtime.png" > </img> </div>
+			<div class="item-text"> AIRTIME </div>
+		</a>
+		<a class="item-element" id="electricity" href="#home-page/electricity-page">
+			<div class="item-img"> <img src="images/Resources/720/electricity.png" > </img> </div>
+			<div class="item-text"> ELECTRICITY </div>
+		</a>
+		<a class="item-element" id="transfer" href="#home-page/transfer-page">
+			<div class="item-img"> <img src="images/Resources/720/tokens.png" > </img> </div>
+			<div class="item-text"> TRANSFER </div>
+		</a>
+	</div>
+	<!-- end home page menu-->
+	<!-- airtime page -->
+	<div data-bind="page: {id: 'airtime-page', source: 'js/app/Views/pages/airtime_list.html', withOnShow:getNetworks}" id="airtime-page"> </div>
+	<!-- voucher list -->
+	<div data-bind="page: {id: 'voucher-page', source: 'js/app/Views/pages/voucher.html', withOnShow:getVoucherList}" id="voucher-page"> </div>
+	<!-- voucher confirm -->
+	<div data-bind="page: {id: 'voucher-page-confirm', source: 'js/app/Views/pages/voucher_confirm.html', withOnShow:voucherConfirm}" id="voucher-page-confirm"> </div>
+	<!-- voucher request -->
+	<div data-bind="page: {id: 'voucher-page-request', source: 'js/app/Views/pages/voucher_request.html', withOnShow:voucherRequest}" id="voucher-page-confirm"> </div>
+
+	<!-- electricity page -->
+	<div data-bind="page: {id: 'electricity-page', source: 'js/app/Views/pages/electricity.html',withOnShow: getMeters}" id="electricity-page"> </div>
+	<!-- electricity confirm page -->
+	<div data-bind="page: {id: 'electricity-confirm-page', source: 'js/app/Views/pages/electricity_confirm_page.html',withOnShow: setElectricity }" id="electricity-confirm-page"> </div>
+
+	<!-- transfer page -->
+	<div data-bind="page: {id: 'transfer-page', source: 'js/app/Views/pages/transfer.html'}" id="transfer-page"> </div>
+	<!-- transfer confirm page -->
+	<div data-bind="page: {id: 'transfer-confirm-page', source: 'js/app/Views/pages/confirm_transfer.html',withOnShow: setTransfer}" id="transfer-confirm-page"> </div>
+
+</html>
+
